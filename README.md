@@ -1,3 +1,10 @@
+## About Page Screenshot
+
+<img src="front-end/public/images/aboutPage.PNG" width="400"/>
+
+# Notes by Abir Mahmood
+I used MongoDB Atlas for this project instead of Docker. To run locally, create your own Atlas cluster and add your connection string to a .env file under back-end/ as DB_CONNECTION_STRING=...
+
 # Full MERN-Stack Web App Exercise
 
 This is a so-called "`monorepo`" - a single repository containing all the components necessary to build and run an app:

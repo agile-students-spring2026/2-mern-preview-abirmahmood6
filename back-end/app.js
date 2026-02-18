@@ -78,5 +78,22 @@ app.post('/messages/save', async (req, res) => {
   }
 })
 
+// route to handle aboutUs page
+app.get('/about', async (req, res) => {
+  try {
+    res.json({
+      name: 'Abir Mahmood',
+      paragraphs: [
+        "Hi, I'm Abir. I'm a computer science student passionate about building full-stack web applications.",
+        'I enjoy working with the MERN stack and learning how backend systems connect with modern frontend frameworks.',
+        'In my free time, I like exploring new technologies and improving my software engineering skills.',
+      ],
+      imageURL: '/images/myPicture.JPG',
+    })
+  } catch (err) {
+    console.log('Error: ', err)
+  }
+})
+
 // export the express app we created to make it available to other modules
 module.exports = app // CommonJS export style!
